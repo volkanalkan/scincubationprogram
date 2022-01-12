@@ -688,6 +688,7 @@ cite.cite__boy::before {
   justify-self: center;
   margin-bottom: var(--mb-0-75);
   transition: .3s;
+  object-fit: contain;
 }
 
 .product__title,
