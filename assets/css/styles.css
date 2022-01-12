@@ -551,14 +551,26 @@ cite{
   margin-bottom: 4rem;
   display: -webkit-inline-box;
   font-size: var(--small-font-size);
+  cursor: pointer;
 }
 
 cite a{
   color: var(--first-color);
   font-weight: bold;
+  cursor: pointer;
 }
 
-cite::before {
+cite.cite__girl::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(/assets/img/girl-icon-9-removebg-preview.png) no-repeat 0 0;
+  background-size: contain;
+  margin-right: 1rem;
+}
+
+cite.cite__boy::before {
   content: '';
   display: block;
   width: 50px;
@@ -887,6 +899,11 @@ cite::before {
 }
 
 /*=============== FOOTER ===============*/
+
+.footer__content{
+  text-align: center;
+}
+
 .footer__container{
   row-gap: 3rem;
 }
@@ -904,7 +921,7 @@ cite::before {
 }
 
 .footer__logo img{
-  width: 100px;
+  width: 280px;
 }
 
 .footer__logo-icon{
@@ -979,7 +996,7 @@ cite::before {
   text-align: center;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
-  margin: 5rem 0 1rem;
+  margin: 3rem 0 1rem;
 }
 
 /*=============== SCROLL UP ===============*/
@@ -1109,8 +1126,7 @@ cite::before {
   .home__container,
   .about__container,
   .questions__container,
-  .contact__container,
-  .footer__container{
+  .contact__container{
     grid-template-columns: repeat(2, 1fr);
   }
   
@@ -1225,11 +1241,8 @@ cite::before {
   .footer__logo{
     font-size: var(--h3-font-size);
   }
-  .footer__container{
-    grid-template-columns: 1fr .5fr .5fr .5fr;
-  }
   .footer__copy{
-    margin: 7rem 0 2rem;
+    margin: 3rem 0 2rem;
   }
 }
 
