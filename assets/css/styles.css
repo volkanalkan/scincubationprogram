@@ -438,6 +438,57 @@ p.about__details-description {
   transform: translateX(.25rem);
 }
 
+/*=============== COUNTER ===============*/
+.counters{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	color: var(--title-color);
+	padding: 40px 20px;
+	border-top: 3px var(--first-color) solid;
+  border-bottom: 3px var(--first-color) solid;
+  margin-top: 10rem;
+}
+
+.counters__container{
+  max-width: 1100px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.counters__container i{
+  font-size: 3rem;
+}
+
+.counters .counters__container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 30px;
+	text-align: center;
+}
+
+.counters i {
+	color: var(--first-color);
+	margin-bottom: 5px;
+}
+
+.counters .counter {
+	font-size: 45px;
+	margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+	.counters .counters__container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.counters .container > div:nth-of-type(1),
+	.counters .container > div:nth-of-type(2) {
+		border-bottom: 1px var(--first-color) solid;
+		padding-bottom: 20px;
+	}
+}
+
 /*=============== BUTTONS ===============*/
 .button{
   display: inline-block;

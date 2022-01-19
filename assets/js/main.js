@@ -140,3 +140,50 @@ sr.reveal(`.home__social`, {delay: 600})
 sr.reveal(`.about__img, .contact__box`,{origin: 'left'})
 sr.reveal(`.about__data, .contact__form`,{origin: 'right'})
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 100})
+
+/*=============== COUNTER ===============*/
+const counters = document.querySelectorAll('.counter');
+const speed = 500; // The lower the slower
+
+counters.forEach(counter => {
+	const updateCount = () => {
+		const target = +counter.getAttribute('data-target');
+		const count = +counter.innerText;
+
+        if(target < 80){
+
+            inc = target / 20;
+        }
+
+        else if(target < 150){
+
+            inc = target / 200;
+        }
+
+        else if(target < 250){
+
+            inc = target / 400;
+        }
+
+        else{
+
+		// Lower inc to slow and higher to slow
+		    inc = target / speed;
+
+        }
+		// console.log(inc);
+		// console.log(count);
+
+		// Check if target is reached
+		if (count < target) {
+			// Add inc to count and output in counter
+			counter.innerText = count + inc;
+			// Call function every ms
+			setTimeout(updateCount, 1);
+		} else {
+			counter.innerText = target;
+		}
+	};
+
+	updateCount();
+});
