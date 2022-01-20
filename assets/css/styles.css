@@ -346,8 +346,6 @@ p.about__details-description {
 /* end */
 
 .home__img{
-  width: 400px;
-  height: 230px;
   justify-self: center;
 }
 
@@ -1096,16 +1094,10 @@ cite.cite__boy::before {
 @media screen and (max-width: 584px){
   .home__img{
     width: 300px;
-    height: 160px;
+    height: 169px;
   }
 }
 
-@media screen and (max-width: 450px){
-  .home__img{
-    width: 250px;
-    height: 270px;
-  }
-}
 
 @media screen and (max-width: 320px){
   .container{
@@ -1113,10 +1105,6 @@ cite.cite__boy::before {
     margin-right: var(--mb-1);
   }
 
-  .home__img{
-    width: 180px;
-    height: 180px;
-  }
   .home__title{
     font-size: var(--h1-font-size);
   }
@@ -1188,9 +1176,8 @@ cite.cite__boy::before {
   .home__container{
     align-items: center;
   }
+
   .home__img{
-    width: 280px;
-    height: 280px;
     order: 1;
   }
   .home__social{
@@ -1226,10 +1213,6 @@ cite.cite__boy::before {
 
   .home{
     padding: 13rem 0 5rem;
-  }
-  .home__img{
-    width: 350px;
-    height: 350px;
   }
   /* for the stage's iframe */
 .stage__iframe{
