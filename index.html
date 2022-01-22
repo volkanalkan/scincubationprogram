@@ -892,7 +892,7 @@ So, if you’re running a public repository on Github, Bitbucket, or similar ver
             <div class="footer__container container grid">
                 <div class="footer__content">
                     <a href="#" class="footer__logo">
-                        <img class="scip_logo" src="/assets/img/SCIP logo.png" alt="">
+                        <img id="scip_logo1" src="/assets/img/SCIP logo.png" alt="">
                     </a>
                 </div>
             </div>
@@ -913,10 +913,12 @@ So, if you’re running a public repository on Github, Bitbucket, or similar ver
         <script type="application/javascript">
             function change_logo() {
                 if (document.body.className == 'dark-theme'){
-                    document.getElementById("scip_logo").src = "/assets/img/scipblack.png";
+                    document.getElementById("scip_logo").src = "/assets/img/SCIP logo.png";
+                    document.getElementById("scip_logo1").src = "/assets/img/SCIP logo.png";
                 }
                 else{
-                    document.getElementById("scip_logo").src = "/assets/img/SCIP logo.png";
+                    document.getElementById("scip_logo").src = "/assets/img/scipblack.png";
+                    document.getElementById("scip_logo1").src = "/assets/img/scipblack.png";
                 }
             }
         </script>
