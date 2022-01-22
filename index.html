@@ -23,7 +23,7 @@
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">
-                    <img class="scip_logo" src="/assets/img/SCIP logo.png" alt="">
+                    <img id="scip_logo" src="/assets/img/SCIP logo.png" alt="">
                 </a>
 
                 <div class="nav__menu" id="nav-menu">
@@ -913,10 +913,10 @@ So, if you’re running a public repository on Github, Bitbucket, or similar ver
         <script type="application/javascript">
             function change_logo() {
                 if (document.body.className == 'dark-theme'){
-                    document.getElementsByClassName("scip_logo").src = "/assets/img/scipblack.png";
+                    document.getElementById("scip_logo").src = "/assets/img/scipblack.png";
                 }
                 else{
-                    document.getElementsByClassName("scip_logo").src = "/assets/img/SCIP logo.png";
+                    document.getElementById("scip_logo").src = "/assets/img/SCIP logo.png";
                 }
             }
         </script>
