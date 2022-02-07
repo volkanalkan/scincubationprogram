@@ -284,7 +284,7 @@ the website, in dark theme
 .nav__list{
   display: flex;
   flex-direction: column;
-  row-gap: 1.25rem;
+  row-gap: .75rem;
 }
 
 .nav__link{
