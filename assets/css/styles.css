@@ -258,7 +258,7 @@ the website, in dark theme
     top: 0;
     right: -100%;
     box-shadow: -2px 0 4px hsla(var(--hue), 24%, 15%, .1);
-    padding: 4rem 0 0 1rem;
+    padding: 4rem 0 0 3rem;
     border-radius: 1rem 0 0 1rem;
     transition: .3s;
     z-index: var(--z-fixed);
@@ -285,7 +285,7 @@ the website, in dark theme
 .nav__list{
   display: flex;
   flex-direction: column;
-  row-gap: 1.5rem;
+  row-gap: 1rem;
 }
 
 .nav__link{
