@@ -565,6 +565,8 @@ p.about__details-description {
 .stage__iframe{
   text-align: center;
   justify-self: center;
+  margin: auto;
+  margin-top: 3rem;
 }
 
 .quotes__container{
@@ -657,17 +659,73 @@ cite.cite__boy::before {
 .steps__container{
   gap: 2rem;
   padding-top: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.steps__container_2{
+  gap: 2rem;
+  padding-top: 1rem;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .steps__title{
   color: #FFF;
+  text-shadow: 0 0 10px #111;
 }
 
 .steps__card{
-  background-color: var(--container-color);
   padding: 2.5rem 3rem 2rem 1.5rem;
   border-radius: 1rem;
+  transition: all 1s ease;
 }
+
+.bl{
+  background-color: var(--container-color);
+}
+
+.card__1{
+  background-image: url(/assets/img/basic-tra-new.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card__2{
+  background-image: url(/assets/img/hackathons-new.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card__3{
+  background-image: url(/assets/img/pre-acc-new.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card__4{
+  background-image: url(/assets/img/acc-new.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.steps__card-hover{
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.steps__card-hover:hover{
+  opacity: 1;
+}
+
+.steps__card:hover{
+  background-color: var(--container-color);
+  background-image: none;
+  transition: all 1s ease;
+}
+
 
 .steps__card img{
   width: 300px;
@@ -1092,13 +1150,6 @@ cite.cite__boy::before {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 584px){
-  .home__img{
-    width: 300px;
-    height: 169px;
-  }
-}
-
 
 @media screen and (max-width: 320px){
   .container{
@@ -1110,7 +1161,8 @@ cite.cite__boy::before {
     font-size: var(--h1-font-size);
   }
 
-  .steps__bg{
+  .steps__bg,
+  .steps__bg_2{
     padding: 2rem 1rem;
   }
   .steps__card{
@@ -1120,6 +1172,13 @@ cite.cite__boy::before {
   .product__container{
     grid-template-columns: .6fr;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 672px){
+  .steps__container,
+  .steps__container_2{
+    grid-template-columns: none;
   }
 }
 
@@ -1231,7 +1290,8 @@ cite.cite__boy::before {
   /* .steps__container{
     grid-template-columns: repeat(3, 1fr);
   } */
-  .steps__bg{
+  .steps__bg,
+  .steps__bg_2{
     padding: 3.5rem 2.5rem;
   }
   .steps__card-title{
