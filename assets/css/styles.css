@@ -903,6 +903,10 @@ cite.cite__boy::before {
 	border-radius: 4px;
 }
 
+#progress-content-section .section-content div{
+  color: #1C1E21;
+}
+
 #progress-content-section .section-content {
 	padding:30px 40px;
 	text-align:center;
@@ -918,7 +922,7 @@ cite.cite__boy::before {
 #progress-content-section .section-content p {
 	font-size:16px;
 	line-height:1.8em;
-	color:#777;
+	color:#1C1E21;
 }
 
 #progress-content-section .section-content {
